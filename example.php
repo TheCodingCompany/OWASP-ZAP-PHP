@@ -2,10 +2,14 @@
 
 require_once "autoload.php";
 
-$sec = new theCodingCompany\Security("http://http://www.dvwa.co.uk");
+$sec = new theCodingCompany\Security("https://www.dvwa.co.uk");
 
-$alerts = $sec->runTests()
-    ->getAlerts();
+$credentials = [
+    "login"         => "admin",
+    "wachtwoord"    => "admin123"
+];
+$alerts = $sec->setFormAuthentication($credentials, "https://www.dvwa.co.uk")
+            ->runTests()
+            ->getAlerts();
 
-echo "<pre>";
 print_r($alerts);
