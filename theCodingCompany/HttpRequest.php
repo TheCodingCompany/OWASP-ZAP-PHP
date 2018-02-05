@@ -9,7 +9,7 @@
  * 
  */
 
-namespace Unit4;
+namespace theCodingCompany;
 
 class HttpRequest
 {

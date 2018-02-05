@@ -8,9 +8,7 @@
  * @license http://www.apache.org/licenses/GPL-compatibility.html GPL
  * 
  */
-namespace Unit4;
-
-require_once realpath(__DIR__)."/HttpRequest.php";
+namespace theCodingCompany;
 
 class Security
 {
