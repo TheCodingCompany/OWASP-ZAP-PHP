@@ -8,7 +8,7 @@ In Security.php even API_KEY = ""; vullen. Deze vind je in OWASP ZAP.
 
 ```
 $sec = new Unit4\Security("https://var.dev.verzuimsignaal2.nl/");
-$alers = $sec->runTests()
+$alerts = $sec->runTests()
             ->getAlerts();
 
 print_r($alerts);  //Array met "Hight", "Low" etc vulnerabilities
